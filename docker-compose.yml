@@ -29,6 +29,7 @@ services:
     container_name: backend
 
   frontend:
+        image: "node:alpine"
         build: ./frontend
         command: npm run start
         container_name: frontend
