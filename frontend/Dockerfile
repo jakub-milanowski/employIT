@@ -9,6 +9,6 @@ COPY ./employit/package.json .
 COPY ./employit/package-lock.json .
 RUN npm i
 # add app
-COPY ./employit ./
+COPY ./employit .
 # start app
 CMD ["npm", "start"]
